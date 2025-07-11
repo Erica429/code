@@ -25,6 +25,4 @@ def test(*args):
             sum += x
         return sum
     return sum_num
-
-
 print(test(1, 3, 23, 45, 34)())
