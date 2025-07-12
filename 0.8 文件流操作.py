@@ -50,5 +50,15 @@ wf1 = open('new1.txt', mode='r+', encoding='UTF-8')  #在指定位置写入数�
 print(wf1.read())
 wf1.close()
 #with语句：不用在最后输入命令关闭文件
-with open('new1.txt', mode='r', encoding='UTF-8') as f:
+with open('new3.txt', mode='w+', encoding='UTF-8') as f:
+    for i in range(10):
+        f.write('hello world\n')
+with open('new3.txt', mode='r+', encoding='UTF-8') as f:
     print(f.read())
+
+#OS模块是Python标准库中的一个用于访问操作系统功能的模块
+import os
+#获取当前工作目录
+print(os.getcwd())
+print(os.listdir(r'/Users/eric/Documents/PycharmProjects'))
+print(os.path.abspath('new.txt'))
