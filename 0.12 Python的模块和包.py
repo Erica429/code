@@ -42,3 +42,5 @@ from my_module import *
 
 print(my_sum(4))
 # print(test(3)) # 报错
+import sys
+print(sys.path)

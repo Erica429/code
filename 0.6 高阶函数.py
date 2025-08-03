@@ -18,11 +18,11 @@ print(sum_num(1,-2,lambda x:x))
 print(sum_num(1,-2,lambda x:x**2))
 
 # 二、函数的返回值是函数
-def test(*args):
+def test1(*args):
     def sum_num():
         sum = 0
         for x in args:
             sum += x
         return sum
     return sum_num
-print(test(1, 3, 23, 45, 34)())
+print(test1(1, 3, 23, 45, 34)())
